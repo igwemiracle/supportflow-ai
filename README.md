@@ -4,7 +4,7 @@ An AI-powered customer support management platform for managing support tickets,
 
 ## Status
 
-**Current Phase:** Phase 0: Development Environment and Project Setup.
+**Current Phase:** Phase 1: Python Fundamentals and Project Foundation
 
 ## Planned Features
 

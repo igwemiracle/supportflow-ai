@@ -34,23 +34,23 @@
 
 ## Commands used
 
-| Command                                       | Purpose                                |
-| --------------------------------------------- | -------------------------------------- |
-| `python --version`                            | Check the Python version on PATH       |
-| `py -0p`                                      | List Pythons known to the launcher     |
-| `where.exe python`                            | List every `python.exe` on PATH        |
-| `python -m pip --version`                     | Show which Python pip belongs to       |
-| `git config --global init.defaultBranch main` | Make new repos start on `main`         |
-| `git init`                                    | Create a repository                    |
-| `python -m venv .venv`                        | Create the virtual environment         |
-| `git add <file>` / `git commit -m "..."`      | Stage and commit                       |
-| `git switch -c <branch>`                      | Create and switch to a branch          |
-| `git log --oneline --all --graph`             | View history of all branches           |
-| `git diff --stat main..HEAD`                  | Summarize differences between two tips |
-| `git remote add origin <url>`                 | Connects to Github                     |
-| `git remote -v`                               | List remote repositories               |
-| `git push -u origin <branch>`                 | Pushes a branch to GitHub.             |
-| `git switch main`                             | Switch to main                         |
+| Command                                       | Purpose                                  |
+| --------------------------------------------- | ---------------------------------------- |
+| `python --version`                            | Check the Python version on PATH         |
+| `py -0p`                                      | List Pythons known to the launcher       |
+| `where.exe python`                            | List every `python.exe` on PATH          |
+| `python -m pip --version`                     | Show which Python pip belongs to         |
+| `git config --global init.defaultBranch main` | Make new repos start on `main`           |
+| `git init`                                    | Create a repository                      |
+| `python -m venv .venv`                        | Create the virtual environment           |
+| `git add <file>` / `git commit -m "..."`      | Stage and commit                         |
+| `git switch -c <branch>`                      | Create and switch to a branch            |
+| `git log --oneline --all --graph`             | View history of all branches             |
+| `git diff --stat main..HEAD`                  | Summarize differences between two tips   |
+| `git remote add origin <url>`                 | Connects to Github                       |
+| `git remote -v`                               | List remote repositories                 |
+| `git push -u origin <branch>`                 | Pushes a branch to GitHub.               |
+| `git switch main`                             | Switch to main                           |
 | `git merge <branch>`                          | Mergers a branch into the current branch |
 
 ## GitHub and merging
@@ -70,7 +70,7 @@
 - `e61ed14` chore: add .gitignore
 - `dee00ef` docs: add initial README
 - `4f267cf` docs: add Phase 0 setup notes
-- (next) docs: add GitHub and merge notes
+- `2870b3b` docs: add GitHub and merge notes to Phase 0 notes
 
 ## How Phase 0 connects forward
 
