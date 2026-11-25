@@ -47,11 +47,30 @@
 | `git switch -c <branch>`                      | Create and switch to a branch          |
 | `git log --oneline --all --graph`             | View history of all branches           |
 | `git diff --stat main..HEAD`                  | Summarize differences between two tips |
+| `git remote add origin <url>`                 | Connects to Github                     |
+| `git remote -v`                               | List remote repositories               |
+| `git push -u origin <branch>`                 | Pushes a branch to GitHub.             |
+| `git switch main`                             | Switch to main                         |
+| `git merge <branch>`                          | Mergers a branch into the current branch |
+
+## GitHub and merging
+
+**Remote.** A named URL pointing at another copy of the repository. `origin` is only the conventional name for the main one. `git remote add origin <url>` creates it, and `git remote -v` lists remotes.
+
+**Push.** `git push -u origin <branch>` uploads a branch. `-u` links the local branch to its remote counterpart, so later `git push` and `git pull` need no arguments. Authentication goes through Git Credential Manager, not a typed password.
+
+**Why the GitHub repo was created empty.** Adding a README or `.gitignore` on GitHub would create a second, unrelated history that must be reconciled before pushing.
+
+**Fast-forward merge.** `git switch main` then `git merge <branch>`. If `main` has no commits the branch lacks, Git only moves the `main` pointer forward. No merge commit and no conflicts are possible. When both branches have new commits, Git creates a merge commit with two parents.
+
+**`main..HEAD` vs `main...HEAD`.** For `git log`, two dots means commits reachable from HEAD but not from `main`. For `git diff`, two dots compares the two tips directly, while three dots compares HEAD against the common ancestor. Use three dots to review what a branch adds.
 
 ## Commit history for this phase
 
-- `e61ed14` chore: add .gitignore (on `main`)
-- `dee00ef` docs: add initial README (on `phase-0-environment-setup`)
+- `e61ed14` chore: add .gitignore
+- `dee00ef` docs: add initial README
+- `4f267cf` docs: add Phase 0 setup notes
+- (next) docs: add GitHub and merge notes
 
 ## How Phase 0 connects forward
 
